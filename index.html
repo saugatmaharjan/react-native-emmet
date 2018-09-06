@@ -27,7 +27,23 @@
     }
 
     header {
+      position: relative;
       background-image: linear-gradient(60deg, #7367F0, #CE9FFC);
+    }
+
+    .package-name {
+      position: absolute;
+      bottom: -24px;
+      left: 50%;
+      height: 48px;
+      font-size: 18px;
+      line-height: 48px;
+      font-weight: bold;
+      padding: 0 24px;
+      border-radius: 24px;
+      background: #fff;
+      transform: translateX(-50%);
+      box-shadow: 0 12px 30px -10px rgba(125, 109, 241, 0.75);
     }
 
     .header-content {
@@ -42,6 +58,7 @@
       margin-bottom: 12px;
       color: #fff;
       opacity: 0.8;
+      text-shadow: 0 2px 15px rgba(0,0,0,0.1);
     }
 
     .sub-title {
@@ -49,6 +66,7 @@
       font-weight: 300;
       color: #fff;
       opacity: 0.8;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     .demo {
@@ -87,6 +105,7 @@
         <h1 class="title">React Native Emmet for VSCode</h1>
         <h3 class="sub-title">Nearly Emmet like abbreviation tab completion for React Native.</h3>
       </div>
+      <div class="package-name">Package name: <i>nativeEmmet</i></div>
     </header>
     <div class="demo">
       <div class="container">
